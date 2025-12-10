@@ -1,0 +1,86 @@
+// ANNNAMACHRYA INSTITUTION OF TECHNOLOGY AND SCIENCES-TIRUPATI:
+abstract class College
+{
+    void diaplay()
+    {
+        System.out.println("Principal Office:");
+    }
+    abstract void groundfloor();
+    abstract void firstfloor();
+    abstract void secondfloor();
+    abstract void thirdfloor();
+    abstract void fourthfloor();
+}
+class Opengate extends College{
+    void groundfloor()
+    {
+        System.out.println("1.ANNAMAIYYA AUDITORIUM ROOM");
+        System.out.println("2.PHYSICS LAB");
+        System.out.println("3.CHEMISTRY LAB1");
+        System.out.println("4.CHEMISTRY LAB2");
+        System.out.println("5.MECHANICAL LAB");
+        System.out.println("6.ENGINNERING WORKSHOP LAB");
+        System.out.println("7.CIVIL LAB");
+        System.out.println("8.ECE LAB");
+        System.out.println("9.EEE LAB1");
+        System.out.println("10.EEE LAB2");
+    }
+    void firstfloor()
+    {
+        System.out.println("B-BLOCK");
+        System.out.println("Principal room");
+        System.out.println("Chairman room");
+        System.out.println("Account section");
+        System.out.println("Waiting room");
+        System.out.println("Exam secton");
+        System.out.println("E-class");
+        System.out.println("Teachers Meeting Hall");
+        System.out.println("C-BLOCK");
+        System.out.println("ECE Department"+"\n"+"\n"+"C1 LAB->C2 LAB"+"\n"+"ECE Department HOD ROOM"+"\n"+"C101-> C102-> C103"+"\n"+"ECE Department Staff Room"+"\n"+"C104 105");
+        System.out.println("A-BLOCK");
+        System.out.println("CIVIL Department"+"\n"+"A101->A102->CIVIL DEpartment womens staff room"+"\n"+"CIVIL Department mens staff room->A103->A104->A105"+"\n"+"A106->107");
+    }
+    void secondfloor(){
+        System.out.println("B-BLOCK");
+        System.out.println("B1 LAB ->INFR0NT OF SERVICE ROOM<-B2 LAB"+"\n"+"BESIDES B1 and B2"+"\n"+"LABRIRY");
+        System.out.println("A-BLOCK");
+        System.out.println("COMPUTER SCICENCE ENGINEERING DEPARTMENT");
+        System.out.println("HOD ROOM->A101->A202->A203"+"\n"+"CSE Department Staff room->A204->A205"+"\n"+"A1 LAB->SERVICE ROOM<-A2 LAB");
+        System.out.println("C-BLOCK");
+        System.out.println("C1 LAB->SERVICE ROOM<-C2 LAB"+"\n"+"Staff Room->C201->C202->C203"+"\n"+"Commutative English LAB->C3 LAB");
+    }
+    void thirdfloor()
+    {
+        System.out.println("A-BLOCK");
+        System.out.println("MECHANICAL DEPARTMENT");
+        System.out.println("A301->HOD ROOM<-A309"+"\n"+"Staff Room->A302->303->304"+"\n"+"A305->A306->A307->A308");
+        System.out.println("B-BLOCK");
+        System.out.println("PLACEMENT HALL");
+        System.out.println("C-BLOCK");
+        System.out.println("C1 LAB->C2 LAB"+"\n"+"HOD ROOM->C301->C302->303"+"\n"+"Staff Room->C304->C305->C306"); 
+    }
+    void fourthfloor()
+    {
+        System.out.println("A-BLOCK");
+        System.out.println("H&Ds DEPARTMENT");
+        System.out.println("A401->HOD ROOOM<-A409"+"\n"+"Staff Room->A402->A403->A404"+"\n"+"A405->A406->A407->A408");
+        System.out.println("B-BLOCK");
+        System.out.println("ARTIFICAL INTELLIGENCE AND DATA SCICENCE DEPARTMENT:");
+        System.out.println("B401->B402->B403->B404->B405->Staff Rooms<-B406->B407->B408->B409->B410");
+        System.out.println("C-BLOCK");
+        System.out.println("MCA&MBA DEPARTMENT");
+        System.out.println("C401->Staff Room->C402"+"\n"+"HOD ROOM->C403->C404->C405"+"\n"+"Staff Room->C406->Seminar Hall");
+    }
+}
+public class AbstractClass{
+    public static void main(String[] args)
+    {
+        System.out.println("ANNAMACHRAYA INSTITUTION OF TECHNOLOGY & SCIENCES AT TIRUPATI");
+        College c=new Opengate();//upcasting
+        c.groundfloor();
+        c.firstfloor();
+        c.secondfloor();
+        c.thirdfloor();
+        c.fourthfloor();
+    }
+}
